@@ -11,16 +11,8 @@ profile:
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a Research Engineer at [Fero](https://www.ferolabs.com/) who recently graduated
-with B.A in Computer Science and Mathematical Statistics from Columbia University
-and who is very interested is very interested in all things Machine Learning and Artificial Intelligence.
-This site is meant to be a general blog where I write down my loose ideas
-about various things in this field  and my impressions and thoughts about papers that
-I read.
-My main areas of interest are uncertainty quantification, bayesian ML, Reinforcement Learning,
-and robustness.
+I am a Research Engineer at Fero[ferolabs.com] and a recent graduate of Columbia University, where I earned my B.A in Computer Science and Mathematical Statistics. I have a strong interest in all things related to Machine Learning and Artificial Intelligence, with a particular focus on uncertainty quantification, Bayesian ML, Reinforcement Learning, and robustness.
 
-Please don't take anything here too seriously as most blogs will surely be written
-with more haste than it would be adequate. Nevertheless, as I find that writing
-helps me clarify ideas, specially when it is meant to be shared  by
-others, I decided it would be a good exercise to get some stuff written down.
+This site serves as a general blog where I share my loose ideas about various topics in this field and my impressions and thoughts about papers that I read. Although most of my blog posts will be written hastily, I still find that writing helps me clarify my ideas, especially when they are meant to be shared with others. Thus, I decided to start writing as a way of thinking through what I encountered with more depth and with the distant hope that someone else might find it helpful.
+
+Please keep in mind that the opinions expressed in this blog are my own, and should not be taken too seriously.
