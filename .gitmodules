@@ -1,0 +1,6 @@
+[submodule "my-academic-site/themes/hugo-coder"]
+	path = my-academic-site/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "my-academic-site/themes/typo"]
+	path = my-academic-site/themes/typo
+	url = https://github.com/tomfran/typo.git
