@@ -1,5 +1,5 @@
 ---
-title: "Markov Chains"
+title: "Markov Chains - J.R Norris"
 book_author: "J.R Norris"
 description: "Solutions and notes."
 date: "2025-02-22"

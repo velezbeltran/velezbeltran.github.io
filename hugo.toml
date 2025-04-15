@@ -9,6 +9,7 @@ googleAnalytics = "G-xxxxxxxxx"
 [taxonomies]
 tag = 'tags'
 
+
 [params]
 # Meta description
 description = "A Tech Blog"
@@ -54,8 +55,14 @@ url = "/self-study"
 
 # Syntax highlight on code blocks
 [markup]
+defaultMarkdownHandler = "goldmark"
 [markup.highlight]
 style = 'algol'
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+    unsafe = true
+
 
 # Giscus comments
 [params.giscus]
