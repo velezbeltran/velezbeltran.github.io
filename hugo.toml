@@ -9,7 +9,6 @@ googleAnalytics = "G-xxxxxxxxx"
 [taxonomies]
 tag = 'tags'
 
-
 [params]
 # Meta description
 description = "A Tech Blog"

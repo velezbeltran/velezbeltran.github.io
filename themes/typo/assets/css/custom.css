@@ -1,10 +1,18 @@
 /* Place custom css here */
 :root {
+
+    /* In your site CSS */
+  body {
+    font-family: "Inter", "system-ui", sans-serif;
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }  
+
     /* Layout */
     --main-width: 900px; /* slightly wider than blog standard for math/code */
   
     /* Typography */
-    --p-line-height: 1.4em; /* tighter than blogs, looser than LaTeX for readability */
+    --p-line-height: 1.5em; /* tighter than blogs, looser than LaTeX for readability */
     --p-margin-top: 0.5rem;
     --p-margin-bottom: 0.9rem;
   
@@ -16,16 +24,19 @@
     --hx-margin-top: 1rem;
     --hx-margin-bottom: 0.7rem;
   
-    /* Optional: justify paragraphs like LaTeX */
-    /* Add this to your CSS rules, not the root: 
-       p { text-align: justify; }
-    */
-  }
+}
+
+ul, ol {
+  padding-left: 1.5rem; /* or 30px */
+  margin-left: 0;       /* optional: reset margin */
+}
+
+p { text-align: justify; }
 
 details {
 background-color: #f9f9f9;
 border: 1px solid #ccc;
-padding: 0.75rem 1rem;
+padding: 1rem 1rem;
 margin-bottom: 1rem;
 border-radius: 6px;
 }
