@@ -1,12 +1,15 @@
 ---
-title: "Chapter 2 – Continuous Time Markov Chains"
+title: "Chapter 2: Continuous Time MCs"
 weight: 1
 date: "2025-04-16"
 math: True
 ---
 
+As titled! A variety of problems on continious time markov chains. 
+Mostly, set-up. 
 
 ### Exercise 1
+
 **Problem:**
 Suppose $S$ and $T$ are independent exponential random variables of parameters $\alpha$ 
 and $\beta$ respectively. 
