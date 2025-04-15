@@ -2,6 +2,7 @@
 title: "Markov Chains"
 book_author: "J.R Norris"
 description: "Solutions and notes."
+date: "2025-02-22"
 math: true
 ---
 

@@ -24,7 +24,7 @@ hideHeader = false
 
 # Lists parameters
 paginationSize = 100
-listSummaries = true
+listSummaries = false
 listDateFormat = '2 Jan 2006'
 
 # Breadcrumbs
@@ -33,15 +33,11 @@ breadcrumbs = false
 # Social icons
 [[params.social]]
 name = "linkedin"
-url = "https://www.linkedin.com/in/user/"
-
-[[params.social]]
-name = "medium"
-url = "https://medium.com/@user"
+url = "https://www.linkedin.com/in/nicolas-beltran-velez-1950141a9/"
 
 [[params.social]]
 name = "github"
-url = "https://github.com/user"
+url = "https://github.com/velezbeltran"
 
 # Main menu pages
 [[params.menu]]
@@ -51,6 +47,10 @@ url = "/"
 [[params.menu]]
 name = "posts"
 url = "/posts"
+
+[[params.menu]]
+name = "self-study"
+url = "/self-study"
 
 # Syntax highlight on code blocks
 [markup]

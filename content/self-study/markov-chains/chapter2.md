@@ -1,6 +1,7 @@
 ---
 title: "Chapter 2 – Continuous Time Markov Chains"
 weight: 1
+date: "2025-04-16"
 math: True
 ---
 
