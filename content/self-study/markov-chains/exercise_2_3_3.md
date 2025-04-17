@@ -55,7 +55,7 @@ Therefore, using the same reasoning as above we have that that the series $\sum_
 
 The condition $\sup_n \lambda_n < \infty$ is not necessary.
 As a counter-example, assume that $\lambda_{2n}$ diverges and $\lambda_{2n + 1} = 1$ for all $n$. 
-The, then clearly $\sum_{i=1}^n S_{2i + 1}$ diverges because of the previous argument. However, as $\sum_{n=1}^n S_{2i}$ is a series of positive terms then $\sum_i S_n$ must diverge as well. 
+The, then clearly $\sum_{i=1}^n S_{2i + 1}$ diverges because of the previous argument. However, as $\sum_{i=1}^n S_{2i}$ is a series of positive terms then $\sum_i S_i$ must diverge as well. 
 
 
 
