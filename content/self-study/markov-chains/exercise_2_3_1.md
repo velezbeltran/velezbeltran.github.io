@@ -1,16 +1,10 @@
 ---
-title: "Chapter 2: Continuous Time MCs"
+title: "Exercise 2.3.1"
 weight: 2
 date: "2025-04-14"
 math: true
 draft: false
 ---
-
-As titled! A variety of problems on continious time markov chains. 
-Mostly, set-up for the good stuff!
-
-
-## Exercise 1
 
 Suppose $S$ and $T$ are independent exponential random variables of parameters $\alpha$ 
 and $\beta$ respectively. 
@@ -20,9 +14,11 @@ and $\beta$ respectively.
  and $\\{\min\\{S, T\\} \geq t\\}$ are independent. 
 
 
-
+# Solution
+<!--
 <details>
 <summary><strong>Solution</strong></summary>
+-->
 
 1. For the first problem we use the CDF trick. 
 Concretely, call $Y = \min\\{S, T\\}$ then: 
@@ -77,5 +73,8 @@ $$
 \int_t^\infty \alpha e^{-(\alpha + \beta) s} ds = \exp(-(\alpha + \beta) t) \frac{\alpha}{\alpha + \beta}
 $$
 We see then that this implies the independence because the left side is $\Pr(S \leq T)$ and the right side is $\Pr(\min\\{S, T\\} \geq t)$, according to the first part of the problem.
+
+<!--
 </details> 
+-->
 

@@ -24,9 +24,9 @@
     
 </title>
 
-<link rel="canonical" href="http://localhost:1313/self-study/markov-chains/chapter2/"/>
+<link rel="canonical" href="http://localhost:1313/self-study/markov-chains/exercise_2_3_1/"/>
 
-<meta property="og:url" content="http://localhost:1313/self-study/markov-chains/chapter2/">
+<meta property="og:url" content="http://localhost:1313/self-study/markov-chains/exercise_2_3_1/">
   <meta property="og:title" content="Exercise 2.3.1">
   <meta property="og:description" content="Suppose $S$ and $T$ are independent exponential random variables of parameters $\alpha$ and $\beta$ respectively.
 What is the distribution of $\min \{ S, T\}$? What is the probability that $S \leq T$? Show that the two events $\{S \leq T\}$ and $\{\min\{S, T\} \geq t\}$ are independent. Solution # For the first problem we use the CDF trick. Concretely, call $Y = \min\{S, T\}$ then: $$ \begin{aligned} \Pr( Y \leq y ) &amp;= 1 - \Pr\left( Y &gt; y \right) \\ &amp;= 1 - \Pr\left( S &gt; y , T &gt; y \right) \\ &amp;= 1 - \Pr(S &gt; y) \Pr(T &gt; y) \\ &amp;= 1 - e^{-\alpha y} e^{-\beta y} \\ &amp;= 1 - e^{-(\alpha &#43; \beta)y} \end{aligned} $$ This is clearly the CDF of an exponential variable $\text{Exp}(\alpha &#43; \beta)$.">

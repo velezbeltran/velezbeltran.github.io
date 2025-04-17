@@ -53,6 +53,10 @@ $$
 $$
 Therefore, using the same reasoning as above we have that that the series $\sum_{i=1}^n S_i (\lambda_i / \lambda_s)$ diverges. However, we know that $\lambda_i / \lambda_s \leq 1$ for all $i$ and thus it must be that $\sum_{i=1}^n S_i$ diverges as well. And so we are done.
 
+The condition $\sup_n \lambda_n < \infty$ is not necessary.
+As a counter-example, assume that $\lambda_{2n}$ diverges and $\lambda_{2n + 1} = 1$ for all $n$. 
+The, then clearly $\sum_{i=1}^n S_{2i + 1}$ diverges because of the previous argument. However, as $\sum_{n=1}^n S_{2i}$ is a series of positive terms then $\sum_i S_n$ must diverge as well. 
+
 
 
 

@@ -197,6 +197,9 @@ $$
 \lim_n   \sum_{i=1}^n \frac{(S_i \lambda_i)/(\lambda_s)}{n} = \frac{1}{\lambda_s}
 $$
 Therefore, using the same reasoning as above we have that that the series $\sum_{i=1}^n S_i (\lambda_i / \lambda_s)$ diverges. However, we know that $\lambda_i / \lambda_s \leq 1$ for all $i$ and thus it must be that $\sum_{i=1}^n S_i$ diverges as well. And so we are done.</p>
+<p>The condition $\sup_n \lambda_n &lt; \infty$ is not necessary.
+As a counter-example, assume that $\lambda_{2n}$ diverges and $\lambda_{2n + 1} = 1$ for all $n$.
+The, then clearly $\sum_{i=1}^n S_{2i + 1}$ diverges because of the previous argument. However, as $\sum_{n=1}^n S_{2i}$ is a series of positive terms then $\sum_i S_n$ must diverge as well.</p>
 <!--
 </details> 
 -->
@@ -220,8 +223,8 @@ Therefore, using the same reasoning as above we have that that the series $\sum_
             <div class="single-pagination-container-prev">
                 <div class="single-pagination-text">←</div>
                 <div class="single-pagination-text">
-                    <a href="/self-study/markov-chains/chapter2/">
-                        Chapter 2: Continuous Time MCs
+                    <a href="/self-study/markov-chains/exercise_2_3_1/">
+                        Exercise 2.3.1
                     </a>
                 </div>
             </div>
