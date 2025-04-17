@@ -9,7 +9,7 @@
   }  
 
     /* Layout */
-    --main-width: 900px; /* slightly wider than blog standard for math/code */
+    --main-width: 850px; /* slightly wider than blog standard for math/code */
   
     /* Typography */
     --p-line-height: 1.5em; /* tighter than blogs, looser than LaTeX for readability */

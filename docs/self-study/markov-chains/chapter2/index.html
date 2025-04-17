@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    Chapter 2: Continuous Time MCs | 
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/self-study/markov-chains/chapter2/"/>
+
+<meta property="og:url" content="http://localhost:1313/self-study/markov-chains/chapter2/">
+  <meta property="og:title" content="Chapter 2: Continuous Time MCs">
+  <meta property="og:description" content="As titled! A variety of problems on continious time markov chains. Mostly, set-up for the good stuff!
+Exercise 1 # Suppose $S$ and $T$ are independent exponential random variables of parameters $\alpha$ and $\beta$ respectively.
+What is the distribution of $\min \{ S, T\}$? What is the probability that $S \leq T$? Show that the two events $\{S \leq T\}$ and $\{\min\{S, T\} \geq t\}$ are independent. Solution For the first problem we use the CDF trick. Concretely, call $Y = \min\{S, T\}$ then: $$ \begin{aligned} \Pr( Y \leq y ) &amp;= 1 - \Pr\left( Y &gt; y \right) \\ &amp;= 1 - \Pr\left( S &gt; y , T &gt; y \right) \\ &amp;= 1 - \Pr(S &gt; y) \Pr(T &gt; y) \\ &amp;= 1 - e^{-\alpha y} e^{-\beta y} \\ &amp;= 1 - e^{-(\alpha &#43; \beta)y} \end{aligned} $$ This is clearly the CDF of an exponential variable $\text{Exp}(\alpha &#43; \beta)$.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="self-study">
+    <meta property="article:published_time" content="2025-04-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-14T00:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.baa622bc4771e17b05f33c0334e076feda9adcef116415427b5a27accae85a6a.css" media="all">
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/"></a>
+    </h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/self-study" >
+                /self-study
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Chapter 2: Continuous Time MCs</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2025-04-14T00:00:00&#43;00:00">April 14, 2025</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>As titled! A variety of problems on continious time markov chains.
+Mostly, set-up for the good stuff!</p>
+<h2 class="heading" id="exercise-1">
+  Exercise 1
+  <a class="anchor" href="#exercise-1">#</a>
+</h2>
+<p>Suppose $S$ and $T$ are independent exponential random variables of parameters $\alpha$
+and $\beta$ respectively.</p>
+<ul>
+<li>What is the distribution of $\min \{ S, T\}$?</li>
+<li>What is the probability that $S \leq T$?</li>
+<li>Show that the two events $\{S \leq T\}$
+and $\{\min\{S, T\} \geq t\}$ are independent.</li>
+</ul>
+<details>
+<summary><strong>Solution</strong></summary>
+<ol>
+<li>
+<p>For the first problem we use the CDF trick.
+Concretely, call $Y = \min\{S, T\}$ then:
+$$
+\begin{aligned}
+\Pr( Y \leq y ) &amp;= 1 - \Pr\left( Y &gt; y \right) \\
+&amp;= 1 - \Pr\left( S &gt; y , T &gt; y \right) \\
+&amp;= 1 - \Pr(S &gt; y) \Pr(T &gt; y) \\
+&amp;= 1 - e^{-\alpha y} e^{-\beta y} \\
+&amp;= 1 - e^{-(\alpha + \beta)y}
+\end{aligned}
+$$
+This is clearly the CDF of an exponential variable $\text{Exp}(\alpha + \beta)$.</p>
+</li>
+<li>
+<p>The second problem can be solved by applying conditional expectations:
+$$
+\begin{aligned}
+\Pr( S \leq T) &amp;= \E[ \E[ S \leq T \mid T ]] \\
+&amp;= \int_0^\infty \E [ S \leq T \mid T  = t] \beta \exp(-\beta t) dt\\
+&amp;= \int_0^\infty \left(1 - \exp(-\alpha t)\right) \beta \exp(-\beta t) dt\\
+&amp;= \int_0^\infty \left(\beta \exp(-\beta t) - \beta \exp(-(\alpha + \beta) t)\right)  dt\\
+&amp;= 1 - \frac{\beta}{\alpha + \beta}\\
+&amp;= \frac{\alpha}{\alpha + \beta}
+\end{aligned}
+$$</p>
+</li>
+<li>
+<p>We use the same &ldquo;trick&rdquo; as above. Concretely we see that
+$$
+\begin{aligned}
+\Pr(S \leq T \text{ and } S, T \geq t) &amp;= \E[\E[ S \leq T \text{ and } S, T \geq t\mid S] ]\\
+&amp;= \int_t^\infty \E[ S \leq T \text{ and } S, T \geq t\mid S= s]  \alpha e^{-\alpha s} ds\\
+\end{aligned}
+$$
+Now, clearly the issue is to find
+$$
+\E[ S \leq T \text{ and } S, T \geq t\mid S= s]
+$$
+But this is easy. When $s \geq t$ we see that only the left side matters and the value is $\exp(-\beta s)$.
+Therefore, because in the integral $s$ is always greater than $t$, we have
+$$
+\begin{aligned}
+\Pr(S \leq T \text{ and } S, T \geq t) &amp;= \int_t^\infty e^{-\beta s} \alpha e^{-\alpha s} ds\\
+&amp;= \int_t^\infty \alpha e^{-(\alpha + \beta) s} ds\\
+\end{aligned}
+$$
+Evaluating this integral is easy because we know that
+$$
+\int (\alpha + \beta) e^{-(\alpha + \beta) s} ds = \exp(-(\alpha + \beta) s)
+$$
+Hence, multiplying both sides by $\frac{\alpha}{\alpha + \beta}$ we have
+$$
+\int_t^\infty \alpha e^{-(\alpha + \beta) s} ds = \exp(-(\alpha + \beta) t) \frac{\alpha}{\alpha + \beta}
+$$
+We see then that this implies the independence because the left side is $\Pr(S \leq T)$ and the right side is $\Pr(\min\{S, T\} \geq t)$, according to the first part of the problem.</p>
+</li>
+</ol>
+</details> 
+
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flex">
+
+        <div class="single-pagination-prev">
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/self-study/markov-chains/exercise_2_3_3/">
+                        Exercise 2.3.3
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  <footer>
+    
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ],
+      macros : {
+        "\\P": "\\mathbb{P}",
+        "\\E": "\\mathbb{E}",
+        "\\indicator": "\\mathbb{1}",
+      }
+    });
+  });
+</script>
+  
+
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>
