@@ -6,6 +6,8 @@
     font-family: "Inter", "system-ui", sans-serif;
     line-height: 1.5;
     font-size: 1.1rem;
+    background-color: #fffdfa;  /* light sepia, like Solarized base3 */
+    color: #333;  /* dark grey text for good contrast */
   }  
 
     /* Layout */
@@ -48,3 +50,54 @@ summary {
     margin-bottom: 0.01rem;
     padding: 0.0rem 0; /* reduce vertical padding */
 }
+
+
+
+/* Custom styles for the frist section of the profile page */
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+  border: 2px solid #ccc;
+}
+
+.profile-text {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+}
+
+
+/*
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
+
+*/
